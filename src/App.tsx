@@ -1,24 +1,22 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home/Home.jsx";
-import Resume from "./Resume/Resume.jsx";
-import UDMissionState from "./UDMissionState/UDMissionState.jsx";
-import UDMCMissionState from "./UDMCMissionState/UDMCMissionState.jsx";
-import AppleAdAnalysis from "./AppleAdAnalysis/AppleAdAnalysis.jsx";
-import ReturnOfficeMemo from "./ReturnOfficeMemo/ReturnOfficeMemo.jsx";
+import Home from "./pages/Home.tsx";
+import Resume from "./pages/Resume.tsx";
+import UdMission from "./pages/UdMission.tsx";
+import CrewMission from "./pages/CrewMission.tsx";
+import AppleAd from "./pages/AppleAd.tsx";
+import OfficeMemo from "./pages/OfficeMemo.tsx";
 export default function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home/>} />
+				<Route path="/" element={<Home />} />
 				<Route path="/resume" element={<Resume />} />
-				<Route path="/mission-statement-ud" element={<UDMissionState />} />
-				<Route path="/apple-ad-analysis" element={<AppleAdAnalysis />} />
-				<Route path="/memo-return-to-office" element={<ReturnOfficeMemo />} />
-				<Route path="/mission-statement-udmc" element={<UDMCMissionState />} />
+				<Route path="/mission-statement-ud" element={<UdMission />} />
+				<Route path="/apple-ad-analysis" element={<AppleAd />} />
+				<Route path="/memo-return-to-office" element={<OfficeMemo />} />
+				<Route path="/mission-statement-udmc" element={<CrewMission />} />
 				{/* <Route path="/other-class-piece" element={<OtherClassPiece />} />*/}
 			</Routes>
 		</BrowserRouter>
 	);
 }
-
