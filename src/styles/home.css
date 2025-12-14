@@ -104,3 +104,17 @@
 #page {
 	padding: 40px;
 }
+
+#left-sidebar {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(0%, -50%);
+}
+
+#right-sidebar {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	transform: translate(0%, -50%);
+}

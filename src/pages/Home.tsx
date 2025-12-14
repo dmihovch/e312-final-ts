@@ -1,6 +1,36 @@
 import "../styles/home.css";
+import Sidebar from "../components/Sidebar";
 
+type PageButtonProps = {
+	text: string;
+	path: string;
+};
 export default function Home() {
+	const leftBarProps: PageButtonProps[] = [];
+	leftBarProps.push({ text: "Resume", path: "/resume" });
+	leftBarProps.push({
+		text: "Mission Statement - UD",
+		path: "/mission-statement-ud",
+	});
+	leftBarProps.push({
+		text: "Mission Statement - UDMC",
+		path: "/mission-statement-udmc",
+	});
+
+	const rightBarProps: PageButtonProps[] = [];
+	rightBarProps.push({
+		text: "Ad Analysis - Think Different ",
+		path: "/apple-ad-analysis",
+	});
+	rightBarProps.push({
+		text: "Memo - Return To Office",
+		path: "/memo-return-to-office",
+	});
+	rightBarProps.push({
+		text: "Outside E312",
+		path: "/memo-return-to-office",
+	});
+
 	return (
 		<div id="page">
 			<div id="home-page-wrapper">
@@ -34,16 +64,17 @@ export default function Home() {
 					<h3>Howdy!</h3>
 					<p>
 						As the big bold letters have told you already, my name is Dan
-						Mihovch, and I am a junior Computer Science Major at the University
-						of Delaware. What the big bold letters didn't tell you, is that
-						askdjsal;dkfjasldkfjhaslkdjfhalskdjfhasldkjfhasldkfj hasldkfj
-						hasldkfj hasldkfjh asldkfjhas ldkfjhas ldkfjhas dlfkjhas dlkfjhas
-						dlkfjhas dlkfjhasdlfkjhas dlfkjhasdlfk jahsdflkjahsd flkjahsdf
-						lkajshdf laksjdhf alskjdfh alskdjfh asldkjfh asldkfhaslkdfjhas
-						ldkfjh as dlkfj ahsdl fkjashd lfkjashdf lkajsdhf laskjdhf alskdjf
-						alskdfjh aslkdf:w
+						Mihovch, and I am a junior Computer Science major at the University
+						of Delaware. What the big bold letters didn't tell you, is what I'll
+						tell you now.
 					</p>
 				</div>
+			</div>
+			<div id="left-sidebar">
+				<Sidebar pages={leftBarProps} />
+			</div>
+			<div id="right-sidebar">
+				<Sidebar pages={rightBarProps} />
 			</div>
 
 			<div id="footer-wrapper">

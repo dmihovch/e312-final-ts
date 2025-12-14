@@ -1,0 +1,13 @@
+#page-button-wrapper {
+	width: 10dvi;
+	height: 10dvi;
+	object-fit: fill;
+}
+
+#page-button-button {
+	width: 10dvi;
+	height: 10dvi;
+	text-align: center;
+	text-overflow: break;
+	object-fit: fill;
+}
