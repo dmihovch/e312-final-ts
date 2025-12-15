@@ -1,10 +1,25 @@
 import type { PageLayoutProps } from "../types";
-
+import "../styles/page-layout.css";
+import BackButton from "./BackButton";
 export default function PageLayout(page: PageLayoutProps) {
-  return (
-    <div>
-      <h1>{page.title}</h1>
-      <iframe src={page.pathToFile}></iframe>
-    </div>
-  );
+	return (
+		<div id="page-layout-wrapper">
+			<h1 id="title">{page.title}</h1>
+			<BackButton></BackButton>
+			<div id="para-pdf-wrapper">
+				<div id="para-wrapper">
+					<p id="para">
+						Paragraph explaining this sdjfasdflaksjdf ;laskjdf ;laksdj f;alsdkjf
+						;alskdjf a;sdlkfja; sdlkfjas;dlfkjasd; flkasjd ;flkasjd f;lkasdj
+						f;alksdjf ;alskdfj;asldkfja;sldfkja;sdlfkja ;sdlfjas;dflkjas
+						;dlfkja;sdlfkj as;ldkfjas;dlkfja;sdlfkja;sdl
+						fkjas;dlfjas;ldfkjas;dfkj as d;flkjasd;f lkajsdf ;lkasjd f;lkajsd
+						f;lkajsdf; laksdjf; alksdjf;alskd jfas; ldkfja s;dlfkja;sldkfj
+						a;slkdfja; sldkfjas; dlfkjas;dflkjasdfl;k asd;flkjasd;fl k
+					</p>
+				</div>
+				<iframe id="pdf-viewer" src={page.pathToFile}></iframe>
+			</div>
+		</div>
+	);
 }

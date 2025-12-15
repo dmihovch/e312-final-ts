@@ -1,3 +1,11 @@
+import PageLayout from "../components/PageLayout";
+import OfficeMemoPDF from "../assets/writing-pieces/MemoReturn.pdf";
 export default function OfficeMemo() {
-	return <p>Office Memo</p>;
+	return (
+		<PageLayout
+			title="Memo - Return to Office"
+			pathToFile={OfficeMemoPDF}
+			pathToPage=""
+		/>
+	);
 }

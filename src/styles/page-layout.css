@@ -1,0 +1,36 @@
+#pdf-viewer {
+	height: 80dvh;
+	width: 50dvw;
+}
+
+#page-layout-wrapper {
+	position: absolute;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+}
+
+#para-pdf-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5dvi;
+}
+
+#para-wrapper {
+	position: relative;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	height: fit-content;
+	width: 40dvw;
+	text-align: center;
+	/*width: 40dvw;
+	height: 80dvh;*/
+	background-color: #343434;
+	border-radius: 10px;
+}
+
+#title {
+	text-align: center;
+}

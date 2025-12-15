@@ -5,6 +5,7 @@ import UdMission from "./pages/UdMission.tsx";
 import CrewMission from "./pages/CrewMission.tsx";
 import AppleAd from "./pages/AppleAd.tsx";
 import OfficeMemo from "./pages/OfficeMemo.tsx";
+import DayAtTheRaces from "./pages/DayAtTheRaces.tsx";
 export default function App() {
 	return (
 		<BrowserRouter>
@@ -15,7 +16,7 @@ export default function App() {
 				<Route path="/apple-ad-analysis" element={<AppleAd />} />
 				<Route path="/memo-return-to-office" element={<OfficeMemo />} />
 				<Route path="/mission-statement-udmc" element={<CrewMission />} />
-				{/* <Route path="/other-class-piece" element={<OtherClassPiece />} />*/}
+				<Route path="/outside-e312" element={<DayAtTheRaces />} />
 			</Routes>
 		</BrowserRouter>
 	);

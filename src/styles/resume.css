@@ -1,0 +1,11 @@
+#resume-page-wrapper {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#pdf-viewer {
+	width: 50dvw;
+	height: 80dvh;
+}
