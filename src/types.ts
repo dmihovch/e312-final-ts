@@ -1,14 +1,14 @@
 export type PageButtonProps = {
-  text: string;
-  path: string;
+	text: string;
+	path: string;
 };
 
 export type SideBarProps = {
-  pages: PageButtonProps[];
+	pages: PageButtonProps[];
 };
 
 export type PageLayoutProps = {
-  title: string;
-  pathToFile: string;
-  pathToPage: string;
+	title: string;
+	pathToFile: string;
+	intro: string;
 };

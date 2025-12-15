@@ -1,7 +1,7 @@
 import "../styles/home.css";
 import Sidebar from "../components/Sidebar";
 import type { PageButtonProps } from "../types";
-
+import leia from "../assets/leia-pic.jpg";
 export default function Home() {
 	const leftBarProps: PageButtonProps[] = [];
 	leftBarProps.push({ text: "Resume", path: "/resume" });
@@ -46,7 +46,7 @@ export default function Home() {
 
 					<div id="pic-text-wrap">
 						<div id="leia">
-							<img src="src/assets/leia-pic.jpg" alt="Leia" />
+							<img src={leia} alt="Leia" />
 						</div>
 						<div id="leia-text">
 							<p>
